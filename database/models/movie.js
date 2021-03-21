@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     rating: DataTypes.DECIMAL,
     awards: DataTypes.NUMBER,
     releaseDate: DataTypes.DATE,
-    length: DataTypes.DATE,
+    length: DataTypes.NUMBER,
     genreId: DataTypes.INTEGER,
     // createdAt: DataTypes.DATE,
     // updatedAt: DataTypes.DATE,
