@@ -4,6 +4,8 @@ module.exports = (sequelize, DataTypes) => {
   const columns = {
     id: { primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER },
     name: DataTypes.STRING,
+    ranking: DataTypes.INTEGER,
+    active: DataTypes.INTEGER,
     //created_at: DataTypes.DATE,
     //updated_at: DataTypes.DATE,
   };
@@ -12,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: true,
     tableName: "genres",
     paranoid: false,
-    underscore: true,
+    //underscore: true,
   };
 
   const genre = sequelize.define(alias, columns, config);
