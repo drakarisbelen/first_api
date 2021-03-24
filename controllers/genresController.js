@@ -24,7 +24,7 @@ module.exports = {
   },
 
   store: (req, res) => {
-    DB.Genre.create(req.body).then((Genre) => {
+       DB.Genre.create(req.body).then((Genre) => {
       return res.status(200).json({
         data: Genre,
         status: 200,
