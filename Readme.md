@@ -31,6 +31,12 @@ http://localhost:3010/movies/1
 search: Busca una pelicula por titulo utilizo el parametro keyword y mando la letra o palabra que deseo buscar:
 http://localhost:3010/movies/search?keyword=ani
 
+Insertar una pelicula:
+POST - http://localhost:3010/movies/
+Probar con opción:
+Body y x-www-form-urlencoded
+
+
 ### Temas practicados:
 
 .Uso de Migrations: Nueva migracion, actualizacion de una migracion
@@ -40,3 +46,5 @@ http://localhost:3010/movies/search?keyword=ani
 .Definición de Modelos Sequelize
 
 .creacion de una API Para leer la tabla movies
+
+.Utilizacion de Postman
